@@ -12,7 +12,7 @@ set of tools to use in the development of web applications.
 
 # Frontend Application
 The frontend application, built using JavaScript; Is based on Vercel's Next JS. A framework based of facebook's React.
-This provides frontenders with infamous Fast refresh, and File System among others.
+This provides frontenders with rich tools such as Fast refresh among others.
 
 - Official website(s) and more:
                                 https://nextjs.org/
