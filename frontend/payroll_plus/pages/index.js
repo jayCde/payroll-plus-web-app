@@ -19,8 +19,7 @@ export default function Home() {
         </h4>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>Choosing an option below</code>
+          Get started by Choosing an option below...
         </p>
 
         <div className={styles.grid}>
