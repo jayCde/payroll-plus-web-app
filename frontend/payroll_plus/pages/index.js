@@ -1,14 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import {FaApplePay, FaUserCircle, FaCashRegister, FaAlipay, FaAmazonPay, FaCcPaypal} from 'react-icons/fa'
+import {FaApplePay, FaUserCircle, FaAlipay, FaAmazonPay, FaCcPaypal} from 'react-icons/fa'
 import {FiSettings} from 'react-icons/fi'
 import {GiCash} from 'react-icons/gi'
+import {MdPayment} from 'react-icons/md'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Payroll - Plus</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -24,7 +25,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="/dashboard" className={styles.card}>
-            <h3>Payroll <FaApplePay/> <FaAlipay/> <FaAmazonPay/> <FaCcPaypal/></h3>
+            <h3>Payroll <FaApplePay/> <FaAlipay/> <FaAmazonPay/> <FaCcPaypal/> <MdPayment/></h3>
             <p>Employee payroll, More...</p>
           </a>
 
