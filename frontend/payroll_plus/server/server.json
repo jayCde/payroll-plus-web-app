@@ -1,0 +1,46 @@
+{
+    "users": [
+        {   
+            "id": 1,
+            "userName": "administrator", 
+            "password": "administrator",
+            "firstname": "newFirstname",
+            "lastname": "newLastname",
+            "age": 24
+        }
+      ],
+    "employees": [
+        { 
+            "employeeID": 1,
+            "userName": "administrator", 
+            "password": "administrator",
+            "firstname": "someFirstname",
+            "lastname": "someLastname",
+            "age": 24,
+            "department": "Finance",
+            "unit": "Payroll",
+            "position": "IT Personnel"
+        }
+    ],
+    "salarypayemts": [
+      { 
+            "employeeID": 1,
+            "salaryAmount": 3360.00,
+            "paymentDue": "Yes",
+            "paymentDate": "27-07-2021",
+            "department": "Finance",
+            "unit": "Payroll",
+            "position": "IT Personnel"
+       }
+    ],
+    "payroll": [
+        { 
+            "employeeID": 1,
+            "hourlyRate": 15,
+            "daysofWork": 28,
+            "vat": 0.5,
+            "tax": 2.5,
+            "totalAmount": 3360.00
+        }
+    ]
+  }
