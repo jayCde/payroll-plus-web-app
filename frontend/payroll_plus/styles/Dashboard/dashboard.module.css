@@ -1,0 +1,140 @@
+/*Navigation Bar*/
+.sideNavigation{
+    height: 100%;
+    width: 19.5%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7659ff;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    padding: 20px 0px 0px 10px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 14px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: 0.3s;
+
+}
+
+.notif {
+    margin-top: 5px;
+    padding: 5px 0px 2px 10px;
+    background-color: #6348e2;
+    border-radius: 25px 25px 25px 0px;
+    transition: 0.3s;
+}
+
+.notif p{
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.notif:hover{
+    background-color: #ffffff;
+    color: #7659ff;
+    border: 3px solid #7659ff;
+    border-radius: 25px 0px 25px 25px;
+    transition: 0.3s;
+}
+
+.showNavigation{
+    display: none;
+    position: absolute;
+    float: right;
+    margin: 0px 10px 50px 2px;
+}
+.hideNavigation{
+    position: absolute;
+    float: right;
+    margin: 0px 10px 50px 2px;
+}
+
+
+
+.hideNavigation:hover{
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+
+}
+
+
+.sideNavigation ul > button{
+    width: 184px;
+    margin: 20px 0px 15px 0px;
+    text-transform: capitalize;
+    padding: 15px 50px 15px 10px;
+    text-decoration: none;
+    display: inline-block;
+    background: none;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+
+}
+
+.sideNavigation ul > button > span{
+    margin: 10px 15px 0px 0px;
+}
+
+.sideNavigation ul > button:hover,
+.sideNavigation ul > button:focus,
+.sideNavigation ul > button:active {
+  color: rgb(67, 30, 252);
+  border-color: #ffffff;
+  background-color: #ffffff;
+  transition: 0.3s;
+  border-radius: 25px 25px 25px 25px;
+  text-align: left;
+}
+
+.navlistFooter{
+    margin-top: 90px;
+}
+
+.navlistfooterItem{
+    list-style: none;
+    list-style-type: none;
+    margin: 40px 0px 20px 0px;
+    text-transform: capitalize;
+}
+
+.sideNavigation ul > li{
+    border: 3px solid #ffffff;
+    border-radius:  35px 50px 0px 35px;
+    padding: 5px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.sideNavigation ul > li:hover{
+    color: rgb(67, 30, 252);
+    border-color: #ffffff;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.sideNavigation ul > li > span{
+    padding: 5px 5px 5px 5px;
+}
+
+  
+@media (max-width: 600px) {
+    .sideNavigation {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .showNavigation{
+        display: block;
+    }
+  }
+
+
+/*Main dashboard styles*/

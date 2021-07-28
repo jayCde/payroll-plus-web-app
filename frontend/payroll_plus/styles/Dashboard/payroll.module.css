@@ -1,0 +1,175 @@
+.container {
+    background-image: url(/img/pexels-karolina-grabowska-4475524.jpg);
+    background-color:   linear-gradient(217deg, #7d769d, #534e6d 70.71%),
+                        linear-gradient(127deg, #7260c0, #392b80 70.71%),
+                        linear-gradient(336deg, #3a2c79, #3b2e7b 70.71%);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+    opacity: 0.9;
+
+}
+
+.main {
+    padding: 5rem 0;
+    flex: 1;
+}
+
+.title {
+    margin: 0% 0% 0% 20%;
+    line-height: 1.15;
+    font-size: 2rem;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+}
+
+.card {
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 2px solid #6044e2;
+    border-radius: 25px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    cursor: pointer;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: #ffffff;
+    border-color: rgb(67, 30, 252);
+    background-color: #3912fc;
+    transition: 0.5s;
+}
+
+.card:hover:nth-child(2) {
+    border-color: rgb(179, 179, 179);
+    background-color: #ff5183;
+}
+
+.card:hover:nth-child(4) {
+    border-color: rgb(179, 179, 179);
+    background-color: #20d089;
+}
+
+.card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    width: fit-content;
+    margin: 0;
+    line-height: 1.5;
+    background-color: rgb(179, 179, 179);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #ffff thin;
+    border-radius: 25px;
+}
+
+.buttonGroups{
+    border: none;
+    padding: 7px 5px 5px 5px ;
+    background-color: inherit;
+    border-radius: 25px;
+    margin: 5px 0px 5px 5px;
+    font-size: 18px;cursor: pointer;
+    transition: 0.3s;
+    transform: 0.3s;
+}
+
+.buttonGroups:hover{
+    background-color: rgb(60, 60, 60);
+    color: #ffffff;
+    transition: 0.3s;
+}
+/*Table styles*/
+.payrollListing {
+    border-radius: 25px
+;}
+
+.payrollData {
+    margin-top: 20px;
+
+    border-collapse: collapse;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 130%;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payrollData th {
+    /* border: 1px solid rgb(106, 104, 104); */
+    /* padding: 8px; */
+    transition: 0.5s;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.payrollData td{
+    padding: 8px;
+    text-align: center;
+
+}
+.payrollData tr{
+    transition: 0.5s;
+    font-size: 14px;
+    border-bottom: 1px solid #e6e6e6;
+    align-content: center;
+    background-color: #9a96a9;
+}
+
+.payrollData tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.payrollData tr:hover {
+    background-color: #7569aa;
+    color: white;
+}
+
+.payrollData th {
+    background-color: #6044e2;
+    color: white;
+  }
+
+
+/*Responsiveness*/
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        padding: 0px 50px 0px 120px;
+    }
+}

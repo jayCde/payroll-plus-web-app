@@ -1,0 +1,125 @@
+.container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#7659ff;
+    ;
+}
+
+  .main {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    opacity: .7;
+    color: white;
+    font-size: 36px;
+  }
+
+  .card {
+    /* margin-top: 30px; */
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 110%; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 70px 100px rgba(88, 93, 88, 0.904);
+    transform: 0.3s;
+    transition: 0.3s;
+  }
+
+  .card h3 {
+    margin-bottom: 20px;
+  }
+
+  .card:hover{
+    background-color: #958bc9;
+    transform: 0.3s;
+    transition: 0.3s;
+  }
+
+  .InputField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 350px;
+    height: 40px;
+    background-color: rgb(255, 253, 253);
+    color: black;
+    border: none;
+    border-bottom: 2px solid #807e7e;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .errors {
+    display: flex;
+    font-size: 12px;
+    flex-direction: column;
+    color: darkred;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+  }
+
+  .loginbtn {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 2px 2px 2px 2px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(204, 203, 203);
+    color: black;
+    border: 2px solid rgb(204, 203, 203);
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .loginbtn:hover {
+    background-color: rgb(55, 65, 199);
+    transition-duration: 0.5s;
+    opacity: 1;
+    color: white;
+    border: 2px solid rgb(55, 65, 199);
+  }
+
+
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
