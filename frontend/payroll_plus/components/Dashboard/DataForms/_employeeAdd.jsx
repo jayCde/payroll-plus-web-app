@@ -1,53 +1,124 @@
-import Modal from "../../../Layout/Modal";
-import styles from "../../../styles/Dashboard/Modals/bootstrapmodal.module.css";
-import { useState, useEffect } from "react";
+import React from 'react';
+  import { makeStyles } from '@material-ui/core/styles';
+  import Modal from '@material-ui/core/Modal';
+  import Backdrop from '@material-ui/core/Backdrop';
+  import Fade from '@material-ui/core/Fade';
+import styles from '../../../styles/Dashboard/Modals/modal.module.css'
+
+import {FaUserPlus} from 'react-icons/fa';
 
 
-export default function AddEmployees() {
-  const { label, input, btn, fileLabel,fileinput, btn2 } = styles
+const useStyles = makeStyles((theme) => ({
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+}));
 
+export default function TransitionsModal() {
+    //State objects
+    const [firstname, setFirstname] = React.useState("");
+    const [lastname, setLastname] = React.useState("")
+    const [department, setDepartment] = React.useState("");
+    const [unit, setUnit] = React.useState("");
 
-  const addEmployee = async () => {
-    
-  };
+    //material ui modal objects
+    const classes = useStyles();
+    const [open, setOpen] = React.useState(false);
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
   return (
-      <div>
-    <Modal id="add-employees" title="Add New Employee">
-      <div>
-        <form id="admin-clt client-organization-form" onSubmit={addEmployee}>
-          <div className="m-4">
-            <label className={label}>Employee Name</label>
+    <div>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        className={classes.modal}
+        open={open}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <div className={classes.paper}>
             <div>
-              <input
-                className={input}
-                id="employee-name"
-              ></input>
+                <FaUserPlus/>
+                <form id="add-emp-form" className={styles.addEmpbtn}>
+                <div className="m-4">
+                    <div>
+                    <input
+                        className={styles.InputField}
+                        placeholder="Enter employee firstname"
+                        id="emp-name"
+                        value={firstname}
+                        onChange={(e) => setFirstname(e.target.value)}
+                    ></input>
+                    </div>
+                </div>
+                <div className="m-4">
+                    <div>
+                    <input
+                        className={styles.InputField}
+                        id="emp-age"
+                        value={lastname}
+                        value={styles.lastname}
+                        onChange={(e) => setLastname(e.target.value)}
+                    ></input>
+                    </div>
+                </div>
+                <div className="m-4">
+                    <label className={styles.label}>Department</label>
+                    <div>
+                    <input
+                        className={styles.InputField}
+                        id="emp-department"
+                        value={department}
+                        onChange={(e) => setDepartment(e.target.value)}
+                    ></input>
+                    </div>
+                </div>
+                <div className="m-4">
+                    <div>
+                    <input
+                        className={styles.InputField}
+                        id="emp-unit"
+                        value={unit}
+                        onChange={(e) => setUnit(e.target.value)}
+                    ></input>
+                    </div>
+                </div>
+                <div className="m-4">
+                    <button
+                        className={`${styles.btn} text-light `}
+                        id="dismiss-mod-btn"
+                        type="button"
+                        data-dismiss="modal"
+                        >
+                        Close
+                    </button>
+                    <button
+                        className={`${styles.btn} text-light `}
+                    >
+                    Submit
+                    </button>
+                </div>
+                </form>
             </div>
           </div>
-          <div className="m-4">
-            <label className={label}>Employee Age</label>
-            <div>
-              <input
-                className={input}
-                id="employee-age"
-                value={description}
-              ></input>
-            </div>
-          </div>
-          <div className="m-4">
-            <button
-                className={`${btn} text-light `}
-                id="add-employee-btn"
-                type="button"
-                data-dismiss="modal"
-                >
-                Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </Modal>
+        </Fade>
+      </Modal>
     </div>
   );
 }
