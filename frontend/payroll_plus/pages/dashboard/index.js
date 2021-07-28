@@ -7,7 +7,7 @@ const UserDashboardPage = () => {
         <div>
             <Head>
                 <title>Dashboard</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="https://img.icons8.com/material-two-tone/50/000000/background-remover.png"/>
             </Head>
             <UserDashboard/>
         </div>

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {FaApplePay, FaUserCircle, FaAlipay, FaAmazonPay, FaCcPaypal} from 'react-icons/fa'
-import {FiSettings} from 'react-icons/fi'
+import {FiSettings, FiLogIn} from 'react-icons/fi'
 import {GiCash} from 'react-icons/gi'
 import {MdPayment} from 'react-icons/md'
 
@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Payroll - Plus</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Payroll - Plus | Home</title>
+        <link rel="icon" href="https://img.icons8.com/material-two-tone/50/000000/background-remover.png"/>
       </Head>
 
       <main className={styles.main}>
@@ -28,7 +28,7 @@ export default function Home() {
             <p>Employee payroll, More...</p>
           </a>
 
-          <a href="/dasboard" className={styles.card}>
+          <a href="/dashboard" className={styles.card}>
             <h3>Users <FaUserCircle/></h3>
             <p>User management, More...</p>
           </a>
@@ -42,12 +42,12 @@ export default function Home() {
           </a>
 
           <a
-            href="/dashboard"
+            href="/auth/login"
             className={styles.card}
           >
-            <h3>Others <FiSettings/></h3>
+            <h3>Login Here <FiLogIn/></h3>
             <p>
-              Admin Management Console, More...
+              Login for access to the Admin Management Console, More...
             </p>
           </a>
         </div>
