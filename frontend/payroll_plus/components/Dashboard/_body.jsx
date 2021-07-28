@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../styles/Dashboard/body.module.css';
 import {FaApplePay, FaUserCircle, FaAlipay, FaAmazonPay, FaCcPaypal} from 'react-icons/fa'
-import {FiSettings} from 'react-icons/fi'
+import {FiInfo} from 'react-icons/fi'
 import {GiCash} from 'react-icons/gi'
 import {MdPayment} from 'react-icons/md'
 
@@ -26,6 +26,7 @@ const Body = () => {
                     </div>
 
                     <div  className={styles.card}>
+                        <FiInfo/>
                         <h3>Total Number of Employees... </h3>
                         <p>{Number_of_Employees}</p>
                     </div>
@@ -36,6 +37,7 @@ const Body = () => {
                     </div>
 
                     <div  className={styles.card}>
+                        <FiInfo/>
                         <h3>Miscellaneous Expenditures... </h3>
                         <p>{Miscellaneous}</p>
                     </div>
