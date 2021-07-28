@@ -1,0 +1,222 @@
+.modalbox {
+  background: #ffffff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  width: fit-content;
+  height: fit-content;
+  font-family: Work Sans;
+}
+
+.header {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 28px;
+  text-align: left;
+  color: #000000;
+}
+
+.label {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+.input {
+  background: #eff0f7;
+  border: 1px solid #eff0f7;
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  width: 552px;
+  height: 54px;
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+.textArea {
+  background: #eff0f7;
+  border: 1px solid #eff0f7;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  width: 552px;
+  /* height: 300px; */
+  padding: 30px;
+  font-size: 16px;
+}
+
+.fileLabel {
+  background: #eff0f7;
+  border: none;
+  border-radius: 16px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  width: 552px;
+  height: 54px;
+  font-weight: 600;
+}
+
+.fileinput {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 1rem 50px;
+  margin-right: 100px;
+  height: 0;
+  overflow: hidden;
+  width: 200px;
+  height: 54px;
+  background: crimson;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.cancel {
+  background: #a0a3bd;
+  border-radius: 50%;
+}
+
+.btnex {
+  background: #df265e;
+  border-radius: 16px;
+  width: 552px;
+  height: 51px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background: #eff0f7; 
+  border-radius: 16px;
+  width: 30%;
+  height: 51px;
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  color: #000000;
+  font-size: 24px;
+}
+
+.btn2 {
+  background: #df265e;
+  border-radius: 16px;
+  width: 30%;
+  height: 51px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.addClientBtn {
+  background: #df265e;
+  border-radius: 16px;
+  width: 100%;
+  height: 51px;
+  border: none;
+  outline: none;
+  margin-right: 20px;
+  margin-top: 25px;
+  font-size: 24px;
+}
+
+.closeModalButton {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 35px;
+  padding: 0;
+  z-index: 10;
+  color: #848487;
+}
+
+.form_header {
+  height: 119px;
+  margin: 0 15px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Work Sans';
+  height: inherit;
+  width: 119px;
+  background: #eff0f7;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  margin-right: 28px;
+
+  color: #000000;
+
+}
+
+.upload {
+  margin-right: 21px;
+
+}
+
+.upload b {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.status {
+  margin-top: 80px;
+}
+
+.status_field {
+  width: 176px;
+  background: #eff0f7;
+  height: 39px;
+  text-decoration: none;
+  border-radius: 16px;
+  border: none;
+  padding: 0 15px;
+  align-items: center;
+  outline: none;  
+}
+
+.validation {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ff0000;
+}
