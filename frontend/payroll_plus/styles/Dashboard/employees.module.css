@@ -157,7 +157,55 @@
     color: white;
   }
 
+/*Modal Styles*/
+.InputField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 550px;
+    height: 50px;
+    background-color: rgb(255, 253, 253);
+    color: black;
+    border: none;
+    border-bottom: 2px solid #807e7e;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  .submitbtn {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 2px 2px 2px 2px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(204, 203, 203);
+    border: 2px solid rgb(55, 65, 199);
 
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+  }
+
+  .submitbtn:hover {
+    background-color: rgb(74, 81, 177);
+    transition-duration: 0.5s;
+    opacity: 1;
+    color: white;
+    border: 2px solid rgb(109, 109, 114);
+  }
 /*Responsiveness*/
 @media (max-width: 600px) {
     .grid {
