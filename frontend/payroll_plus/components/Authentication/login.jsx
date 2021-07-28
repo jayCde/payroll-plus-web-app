@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import axios from 'axios'
 import { useForm } from "react-hook-form";
 import {FaUserCircle} from 'react-icons/fa';
 import {AiFillPlusCircle} from 'react-icons/ai';
@@ -18,14 +19,13 @@ const UserLogin = () => {
     console.log(errors.email, errors.password);
 
     //function to submit login form data
-    const OnSubmituser = (data = { userName, password }) => {
+    const OnSubmituser = (data) => {
 
     //Endpoint -- url for making signup calls
-    const loginurl = "http://localhost:8000/api/login";
+    const loginurl = "http://localhost:7000/user";
   
       console.log("data is", data);
-      axios
-        .post(loginur,{
+      axios.post(loginurl,{
             email: data.userName,
             password: data.password,
         }).then(resp => {
