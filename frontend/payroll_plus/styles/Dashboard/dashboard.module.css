@@ -127,13 +127,15 @@
   
 @media (max-width: 600px) {
     .sideNavigation {
-        display: none;
+        position: relative;
+        float: left;
         width: 100%;
         flex-direction: column;
     }
     .showNavigation{
         display: block;
     }
+    
   }
 
 
