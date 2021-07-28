@@ -4,7 +4,7 @@ import UserLogin from '../../../components/Authentication/login'
 const UserAuthentication = () => {
     return (
         <div>
-            
+            <UserLogin/>
         </div>
     )
 }
