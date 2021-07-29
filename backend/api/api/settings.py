@@ -67,10 +67,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'phonenumber_field',
     # 'payroll',
     'rest_framework',
     'corsheaders',
 ]
+
+#Register the extended Abstract Base User Model
+AUTH_USER_MODEL = 'payroll.User'
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
