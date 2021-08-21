@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "createdev": "concurrently \"yarn dev\" \"yarn run json-server\""
+
   },
   "dependencies": {
     "@material-ui/core": "^4.12.2",
