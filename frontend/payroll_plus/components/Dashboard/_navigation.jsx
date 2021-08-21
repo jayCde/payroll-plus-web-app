@@ -41,7 +41,7 @@ const Navigation = () => {
 
                 <ul className={styles.navlistFooter}>
                     <li className={styles.navlistfooterItem}><span><MdCopyright/></span><a>2021</a></li>
-                    <li className={styles.navlistfooterItem}><span><GiCash/></span><a href="/">Payroll Plus<span><AiFillPlusCircle/></span></a></li>
+                    {/* <li className={styles.navlistfooterItem}><span><GiCash/></span><a href="/">Payroll Plus<span><AiFillPlusCircle/></span></a></li> */}
                 </ul>
                 
             </div>
